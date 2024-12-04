@@ -1,0 +1,506 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* .background-image de la page  */
+.background-image {
+    content: "";
+    position: fixed;
+    /* Permet à l'image de rester en place lors du scroll */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/backgroundS.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+@font-face {
+    font-family: 'MadaniArabic-Regular';
+    src: url('fonts/alfont_com_Madani-Arabic-Regular.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MadaniArabic-Medium';
+    src: url('fonts/alfont_com_Madani-Arabic-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MadaniArabic-Light';
+    src: url('fonts/alfont_com_Madani-Arabic-Light.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Arimo';
+    src: url('fonts/Arimo-Italic.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+}
+
+/* titre : دورة الفتيات المتعلمات */
+
+/* .titre1 h5 {
+    font-family: MadaniArabic-Regular;
+    font-size: 22.2px;
+    color: #53001a;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-left: 0;     
+}
+
+.titre1 img{
+    width: 70px; 
+    height: 70px; 
+    border-radius: 50%;  
+    margin-right: 0;
+} */
+
+/* titre : سيرورة المبادرة  */
+.section-content{
+    border: 2px solid #53001a;
+    border-radius: 20px;
+    color: #53001a !important;
+    padding: 10px;
+    font-family: 'MadaniArabic-Medium';
+    
+}
+
+.section-content h5 {
+
+    font-size: 1.5rem;
+        font-weight: bold;
+}
+.section-content p {
+    font-size: 1.2rem;
+    margin-bottom: auto;
+}
+
+@media (max-width: 768px) {
+    .section-content .second-text {
+        margin-left: 8px !important;
+        margin-right: 8px !important;
+    }
+}
+
+/* titre : الحفظ */
+.pink-banner {
+    background-color: #db719b; 
+    border-bottom-left-radius:50%;
+    border-top-right-radius: 50%; 
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+}
+
+.section-number {
+    
+    background-color: rgb(243, 239, 239);
+    color: #53001a;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    flex-shrink: 0; /* Empêche la réduction de la taille du cercle */
+}
+.section-title {
+    font-family: 'MadaniArabic-Regular';
+    font-size: 19.6px;
+    color: white; 
+}
+
+/* paragraphe */
+.pinkShadow{
+    box-shadow: 12px 12px 2px 1px #db719b;
+    margin-bottom: 20px;
+        }
+
+/*les trois cards */
+
+
+
+
+.threeCards{
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-bottom: 30px;
+}
+
+.parcour-item {
+  background: #FFFFFF;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+
+
+.parcour-item .parcour-header {
+  text-align: center;
+  display: block;
+  position: relative;
+  padding-bottom: 10px; 
+  position: relative;
+  
+}
+
+.parcour-item .parcour-header .parcour-title {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+  position: absolute;
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  top: -20px;
+  /* -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; */
+  /* border-radius: 20px; */
+  /* background: linear-gradient(to right, #f5a2c3, #ff69b4); */
+  font-family: 'MadaniArabic-Light';
+  font-size: 19.6px;
+  color: #53001a !important; 
+ 
+}
+.parcour-item .parcour-header .parcour-title.first {
+    background-color: #eba1b6;
+}
+.parcour-item .parcour-header .parcour-title.second {
+    background-color: rgb(249, 250, 215)
+}
+.parcour-item .parcour-header .parcour-title.third {
+    background-color: #facace
+}
+
+.parcour-item .parcour-body {
+  margin-bottom: 40px;
+}
+
+.parcour-item .parcour-body .parcour-wrapper {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-top: 10px; 
+   padding-bottom: 20px;
+   font-family: 'MadaniArabic-Regular';
+   font-size: 24.6px;
+   color: #53001a; 
+}
+
+
+/* first table  */
+
+.table {
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+.table thead th , .cellule-pink{
+    background-color: #f291b8;
+    color: #FFFFFF;
+    font-family: 'MadaniArabic-Light';
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.table tbody td , .cellule-white{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'MadaniArabic-Regular';
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #53001a;
+}
+.alert .p{
+    font-family: Arimo;
+}
+.alert .alert-link{
+    color:#53001a; 
+    background-color: #f291b8; 
+    text-decoration: none; 
+}
+.flower-image {
+    position: absolute;
+    left: 0;
+    width: 130px;
+    height: auto;
+}
+
+/* garder responsive */
+
+/* Personnaliser le scrollbar pour les navigateurs basés sur WebKit (Chrome, Safari) */
+.table-responsive::-webkit-scrollbar {
+    width: 1px; /* Réduire la largeur du scrollbar */
+    height: 5px; /* Réduire la hauteur du scrollbar horizontal */
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #f7d6e3; /* Couleur de fond de la piste */
+
+}
+
+/* .table-responsive::-webkit-scrollbar-thumb {
+    background-color: #f291b8; 
+    border-radius: 10px; 
+} */
+
+/* Pour Firefox */
+.table-responsive {
+    scrollbar-width:thin; /* Réduire la largeur du scrollbar */
+    scrollbar-color: #f291b8 #f7d6e3; /* Couleur du pouce et de la piste */
+
+    
+}
+
+
+@media (max-width: 768px) {
+    .flower-image {
+        width: 100px;
+    }
+    .table {
+        border-spacing: 5px;
+    }
+    .table thead th, .table tbody td {
+        font-size: 0.9rem;
+    }
+    
+}
+@media (max-width: 576px) {
+    .flower-image {
+        width: 80px;
+    }
+    .table {
+        border-spacing: 3px;
+    }
+    .table thead th, .table tbody td {
+        font-size: 0.8rem;
+    }
+}
+
+.table-bordered-rose thead th,
+.table-bordered-rose tbody td ,.cellule-white{
+    border: 3px solid #f291b8;
+}
+.bg-pink {
+    background-color: #f291b8 !important;
+
+}
+.text-color {
+    color: #53001a !important;
+    /* font-size: 19px !important; */
+}
+
+/******** tan9iT**** */
+
+
+.tick img {
+    width: 22px; 
+    height: 20px;
+    margin-left: 5px; 
+}
+.tick span{
+    
+    background-color: rgba(235, 161, 182, 0.4);
+    background-size: 80%;
+}
+
+.parag {
+    color: #53001a;
+    padding: 10px;
+    font-family: 'MadaniArabic-Medium';
+    font-size: 20px;
+
+}
+
+/**********tableau des notes *******/
+
+.cellule-white ,.cellule-pink{
+   font-size: 19.6px !important;
+   
+   font-family: 'MadaniArabic-Regular' !important;
+   font-weight: lighter !important;
+   display: flex; /* Utilisation de flexbox pour faciliter le centrage */
+   justify-content: center; /* Centrer horizontalement */
+   align-items: center; /* Centrer verticalement */
+   text-align: center; /* S'assurer que le texte est centré */
+
+}
+
+/* Centrage du texte dans les cellules */
+
+
+.vertical-text {
+    text-align: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.pr-4 {
+    width: 20%;
+}
+
+.pr-6 {
+    width: 15%;
+}
+
+/* .scroll-container {
+    min-width: 760px;
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    overflow-x: auto;
+} */
+ .max-with{
+min-width: 1000px; }
+
+.width-large {
+    width: 89%;
+}
+
+.width-small {
+    width: 10%;
+}
+
+/* Effet de transition pour attirer l'attention */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+.icon-eye {
+    color: #f291b8; /* Couleur de base de l'icône */
+    transition: transform 0.3s ease, color 0.3s ease;
+    animation: pulse 1.5s infinite; /* Animation de pulsation continue */
+}
+
+
+/* Effet au survol */
+.icon-eye:hover {
+    cursor: pointer  !important;
+    transform: scale(1.2); /* Agrandit l'icône légèrement au survol */
+    transition: all 0.3s ease;
+
+}
+
+.icon-eye.versus{
+    color:#fff !important;
+}
+
+.highlight-pink{
+display: inline;
+background-color: rgba(235, 161, 182, 0.4);
+font-family: 'MadaniArabic-Medium';
+color: #53001a;
+}
+
+.seances-baraim {
+    padding-right: 20%;
+    padding-left: 20%;
+    margin-bottom: 40px !important;
+}
+
+.seance-item {
+    margin-bottom: 20px;
+}
+
+.seance-head {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.25rem; /* Taille du texte améliorée */
+    font-weight: bold;
+    border: 2px solid #53001a;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* Légère ombre */
+}
+
+.seance-head, .seance-title, .seance-body {
+    background-size: cover;
+    border: 2px solid #53001a;
+    box-shadow: 3px 3px 1px 1px #53001a;
+    color: #53001a !important;
+    font-family: 'MadaniArabic-Medium';
+}
+
+.seance-title, .seance-body {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+    padding: 10px;
+    min-width: 180px; /* Largeur minimale */
+    min-height: 70px; /* Hauteur minimale */
+    text-align: center;
+}
+
+.seance-title {
+    background-color: #eba1b6;
+    color: #fff !important;
+}
+
+/* Responsivité pour écrans plus petits */
+@media (max-width: 768px) {
+    .seances-baraim{
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+   
+    .section-content p{
+        padding-left: 4px !important;
+        padding-right: 4px !important;
+    }
+    
+}
+
+.bara3im_programme {
+    text-align: center; /* Centre le contenu horizontalement */
+  }
+  
+  .bara3im_programme img {
+    max-width: 100%; /* Réduit la taille de l'image proportionnellement à la taille de l'écran */
+    height: auto;    /* Maintient les proportions de l'image */
+    display: inline-block;
+  }
+  
+  .chevron {
+    display: inline-block;  /* Aligner l'image avec le texte */
+    vertical-align: middle; /* Alignement vertical de l'image au milieu du texte */
+    margin-left: 4px;       /* Espace entre l'image et le texte en RTL (image à gauche du texte) */
+    width: 10px;            /* Ajuster la taille de l'image du chevron */
+    height: auto;           /* Garder les proportions de l'image */
+}
+
+/*.left-chevron {
+    display: inline-block;  
+    vertical-align: middle;  
+    margin: 0;               
+}*/
+
